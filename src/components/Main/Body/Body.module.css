@@ -1,0 +1,59 @@
+.fadeInT {
+    animation: 0.5s fadeIn forwards;
+  }
+  
+  .fadeOutT {
+    animation: 0.5s fadeOut forwards;
+  }
+
+.fadeInB {
+  animation: 0.5s fadeInB forwards;
+}
+
+.fadeOutB {
+  animation: 0.5s fadeOutB forwards;
+}
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(0, 100%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0%);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translate(0px, 0%);
+    }
+    to {
+      transform: translate(0, -100%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeInB {
+    from {
+      opacity: 0;
+      transform: translate(0, -100%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0, 0%);
+    }
+  }
+  
+  @keyframes fadeOutB {
+    from {
+      opacity: 1;
+      transform: translate(0px, 0%);
+    }
+    to {
+      transform: translate(0, 100%);
+      opacity: 0;
+    }
+  }

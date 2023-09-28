@@ -1,0 +1,49 @@
+.button{
+    width: 22px;
+    height: 14px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    flex-shrink: 0;
+    width: 28px;
+    height: 20px;
+    outline: none;
+    transition: transform .5s ease-in-out;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.button span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    height: 2px;
+    background-color: white;
+}
+
+.button span:nth-child(1) {
+    top: 0px;
+}
+.button span:nth-child(2), .button span:nth-child(3){
+    top: 6px;
+}
+.button span:nth-child(4) {
+    top: 12px;
+}
+
+.button.active span:nth-child(1), .button.active span:nth-child(4){
+    width: 0%;
+    left: 50%;
+    top: 6px;
+}
+.button.active span:nth-child(2){
+    transform: rotate(45deg);
+}
+.button.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
